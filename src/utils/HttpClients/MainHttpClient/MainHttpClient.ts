@@ -1,5 +1,5 @@
 import { HttpClient } from '@/classes';
-const BASE_URL = process.env.NEXT_PUBLIC_DOMAIN;
+const BASE_URL = '';
 
 export default new HttpClient({
   baseURL: BASE_URL,
