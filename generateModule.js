@@ -13,7 +13,8 @@ const tsxFilePath = `${pathToCreate}/${moduleName}.tsx`;
 const indexFilePath = `${pathToCreate}/index.ts`;
 const stylesFilePath = `${pathToCreate}/${moduleName}.module.scss`;
 
-const contentForComponentFile = `import React from 'react';\n
+const contentForComponentFile = `import React from 'react';
+import styles from './${moduleName}.module.scss';\n
 const ${moduleName} = () => {
   return <div>${moduleName}</div>;
 }\n
