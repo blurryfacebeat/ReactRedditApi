@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 
 const pathToCreate = resolve(__dirname, `${modulePath}/${moduleName}`);
 const tsxFilePath = `${pathToCreate}/${moduleName}.tsx`;
-const indexFilePath = `${pathToCreate}/index.tsx`;
+const indexFilePath = `${pathToCreate}/index.ts`;
 const stylesFilePath = `${pathToCreate}/${moduleName}.module.scss`;
 
 const contentForComponentFile = `import React from 'react';\n
