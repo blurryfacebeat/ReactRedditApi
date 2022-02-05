@@ -1,0 +1,12 @@
+.cardItem {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 7px;
+
+  background-color: $main-white;
+}
+
+.cardItem > * {
+  flex: 1 1 100%;
+}

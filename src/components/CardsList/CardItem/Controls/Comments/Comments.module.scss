@@ -1,0 +1,17 @@
+.commentsButton {
+  display: flex;
+  align-items: normal;
+
+  cursor: pointer;
+}
+
+.commentsButton * {
+  color: $silver-crayola;
+}
+
+.commentsNumber {
+  padding: 0 0 0 6px;
+
+  font-size: 12px;
+  line-height: 14px;
+}

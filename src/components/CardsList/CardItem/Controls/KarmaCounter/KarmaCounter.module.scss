@@ -1,0 +1,37 @@
+.karmaCounter {
+  svg {
+    transition: fill 0.2s ease;
+  }
+}
+
+.karmaCounter > * + * {
+  padding: 0 0 0 4px;
+}
+
+.karmaUp {
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: $yellow-green;
+      }
+    }
+  }
+}
+
+.karmaValue {
+  color: $silver-crayola;
+}
+
+.karmaDown {
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: $light-cherry;
+      }
+    }
+  }
+}

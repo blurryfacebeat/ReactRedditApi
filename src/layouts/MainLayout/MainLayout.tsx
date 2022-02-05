@@ -3,6 +3,7 @@ import { IMainLayoutProps } from './MainLayout.types';
 import styles from './MainLayout.module.scss';
 import { MainLayoutHeader } from './MainLayoutHeader';
 import { MainLayoutContent } from './MainLayoutContent';
+import { CardsList } from '@/components';
 
 const MainLayout = (props: IMainLayoutProps) => {
   const { children } = props;
@@ -10,7 +11,9 @@ const MainLayout = (props: IMainLayoutProps) => {
   return (
     <div className={styles.layout}>
       <MainLayoutHeader />
-      <MainLayoutContent>{children}</MainLayoutContent>
+      <MainLayoutContent>
+        <CardsList />
+      </MainLayoutContent>
     </div>
   );
 };

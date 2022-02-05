@@ -1,0 +1,58 @@
+.textContent > * {
+  flex: 1 1 100%;
+}
+
+.textContent {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 22px 20px 13px;
+}
+
+.metaData {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.userLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px 0 0;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0;
+
+  border-radius: 20px;
+}
+
+.username {
+  color: $copper;
+}
+
+.createdAt, .createdAt * {
+  color: $pearl-light-gray;
+}
+
+.title {
+  margin: 0;
+  padding: 7px 0 0;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.postLink {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
