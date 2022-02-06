@@ -51,6 +51,16 @@
 
 .username {
   color: $copper;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .createdAt {
@@ -71,6 +81,20 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+
+  a {
+    transition: color 0.2s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $copper;
+      }
+    }
+
+    &:active {
+      color: $copper;
+    }
+  }
 
   @media all and (min-width: 1024px) {
     margin-bottom: 10px;
