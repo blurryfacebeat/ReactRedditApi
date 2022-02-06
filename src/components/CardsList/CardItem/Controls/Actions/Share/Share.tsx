@@ -4,7 +4,7 @@ import SocialIcon from '@/assets/icons/social.svg';
 
 const Share = () => {
   return (
-    <button className={styles.shareButton}>
+    <button>
       <SocialIcon />
     </button>
   );

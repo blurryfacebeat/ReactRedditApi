@@ -1,0 +1,27 @@
+.actions {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 15px;
+
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
+
+  button {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $silver-crayola;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+}

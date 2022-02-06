@@ -1,11 +1,17 @@
-.textContent > * {
-  flex: 1 1 100%;
-}
-
 .textContent {
   display: flex;
   flex-flow: row wrap;
-  padding: 22px 20px 13px;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 15px;
+
+  @media all and (min-width: 1024px) {
+    padding: 0;
+    order: 1;
+  }
+}
+
+.textContent > * {
+  flex: 1 1 100%;
 }
 
 .metaData {
@@ -15,6 +21,12 @@
 
   font-size: 10px;
   line-height: 12px;
+
+  @media all and (min-width: 1024px) {
+    order: 1;
+
+    font-size: 14px;
+  }
 }
 
 .userLink {
@@ -23,6 +35,10 @@
   align-items: center;
   height: 20px;
   padding: 0 6px 0 0;
+
+  @media all and (min-width: 1024px) {
+    order: 1;
+  }
 }
 
 .avatar {
@@ -37,6 +53,13 @@
   color: $copper;
 }
 
+.createdAt {
+  @media all and (min-width: 1024px) {
+    order: 0;
+    margin-right: 10px;
+  }
+}
+
 .createdAt, .createdAt * {
   color: $pearl-light-gray;
 }
@@ -48,6 +71,14 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+
+  @media all and (min-width: 1024px) {
+    margin-bottom: 10px;
+    order: 0;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .postLink {

@@ -5,8 +5,10 @@
   border-radius: 7px;
 
   background-color: $main-white;
-}
 
-.cardItem > * {
-  flex: 1 1 100%;
+  @media all and (min-width: 1024px) {
+    padding: 0 40px;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 }

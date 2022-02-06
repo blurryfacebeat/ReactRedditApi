@@ -2,10 +2,21 @@
   svg {
     transition: fill 0.2s ease;
   }
+
+  @media all and (min-width: 1024px) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .karmaCounter > * + * {
   padding: 0 0 0 4px;
+
+  @media all and (min-width: 1024px) {
+    padding: 0;
+  }
 }
 
 .karmaUp {
@@ -18,10 +29,22 @@
       }
     }
   }
+
+  &:active {
+    svg {
+      fill: $yellow-green;
+    }
+  }
 }
 
 .karmaValue {
   color: $silver-crayola;
+
+  @media all and (min-width: 1024px) {
+    padding: 7px 0;
+
+    color: $dark-greenish-yellow-green;
+  }
 }
 
 .karmaDown {
@@ -32,6 +55,12 @@
       svg {
         fill: $light-cherry;
       }
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $light-cherry;
     }
   }
 }

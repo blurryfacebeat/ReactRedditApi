@@ -5,7 +5,6 @@ import { Preview } from './Preview';
 import { Menu } from './Menu';
 import { Controls } from './Controls';
 
-// TODO Доверстать адаптив и не только!!!
 const CardItem = () => {
   return (
     <li className={styles.cardItem}>

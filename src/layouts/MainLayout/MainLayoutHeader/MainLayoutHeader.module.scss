@@ -1,8 +1,6 @@
 .header {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding: 40px;
+  flex-flow: column nowrap;
 
   @media all and (min-width: 1024px) {
     padding: 67px 0;

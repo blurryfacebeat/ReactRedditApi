@@ -2,6 +2,12 @@
   position: absolute;
   top: 17px;
   right: 15px;
+
+  @media all and (min-width: 1024px) {
+    margin: 0 40px 0 auto;
+    position: static;
+    order: 2;
+  }
 }
 
 .menuButton {
@@ -39,5 +45,9 @@
     fill: $light-gray;
 
     transition: fill 0.2s ease;
+  }
+
+  @media all and (min-width: 1024px) {
+    transform: rotate(180deg);
   }
 }

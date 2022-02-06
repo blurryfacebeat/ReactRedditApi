@@ -4,7 +4,7 @@ import PlusIcon from '@/assets/icons/plus-layout.svg';
 
 const Save = () => {
   return (
-    <button className={styles.saveButton}>
+    <button>
       <PlusIcon />
     </button>
   );

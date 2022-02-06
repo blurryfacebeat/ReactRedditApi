@@ -1,6 +1,13 @@
 .controls {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 15px 20px;
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  @media all and (min-width: 1024px) {
+    width: max-content;
+    order: 3;
+  }
 }

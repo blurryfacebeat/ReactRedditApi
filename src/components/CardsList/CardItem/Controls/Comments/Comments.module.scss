@@ -3,6 +3,10 @@
   align-items: normal;
 
   cursor: pointer;
+
+  @media all and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .commentsButton * {
